@@ -191,11 +191,25 @@ header.scrolled {
   font-weight: 800;
   font-size: 1.25rem;
   color: var(--color-text);
+  text-decoration: none;
+}
+
+.header__logo .logo__icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+
+.header__logo .logo__wordmark {
+  background: linear-gradient(135deg, #fff 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .header__logo svg {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
 }
 
 .nav__list {

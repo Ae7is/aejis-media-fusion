@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aejis Media Fusion — Ready-to-Post AI Shorts for Creators</title>
   <meta name="description" content="Aejis Media Fusion delivers ready-to-post AI shorts (60–90s) on a simple monthly plan. Prompt writing, AI visuals, voiceover, captions and editing included. Weekly batch delivery.">
-  <link rel="canonical" href="https://aejismediafusion.com/">
+  <link rel="canonical" href="https://aejismediafusion.netlify.app/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -15,6 +15,7 @@
   <meta name="theme-color" content="#0B1020">
   <meta property="og:title" content="Aejis Media Fusion — Ready-to-Post AI Shorts for Creators">
   <meta property="og:description" content="Aejis Media Fusion delivers ready-to-post AI shorts (60–90s) on a simple monthly plan.">
+  <meta property="og:url" content="https://aejismediafusion.netlify.app/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="/assets/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -76,7 +77,7 @@
       <li><a href="#services" class="mobile-nav__link">Services</a></li>
       <li><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
       <li><a href="#faq" class="mobile-nav__link">FAQ</a></li>
-      <li><a href="#" class="mobile-nav__link btn btn--primary btn--block" data-form>Get Started</a></li>
+      <li><a href="https://forms.gle/W2bm8ZdQxSzKfSTJ7" class="mobile-nav__link btn btn--primary btn--block" data-form>Get Started</a></li>
     </ul>
   </nav>
 
@@ -94,7 +95,7 @@
             Aejis Media Fusion creates ready-to-post AI shorts for AI creators: prompts, visuals, voiceover and editing included, on one simple monthly plan.
           </p>
           <div class="hero__cta-group">
-            <a href="#" class="btn btn--primary btn--block" data-form>Get Started</a>
+            <a href="https://forms.gle/W2bm8ZdQxSzKfSTJ7" class="btn btn--primary btn--block" data-form>Get Started</a>
             <a href="#pricing" class="btn btn--secondary btn--block">See pricing</a>
           </div>
           <div class="hero__trust-chips" data-reveal>
@@ -106,8 +107,10 @@
 
         <div class="phone-mockup" data-reveal>
           <div class="phone__screen">
-            <div class="phone__frame">Your AI Short</div>
-            <div class="phone__play" aria-hidden="true"></div>
+            <video class="phone__video" controls playsinline preload="metadata" poster="/assets/video/promo-poster.jpg" aria-label="Promo video">
+              <source src="/assets/video/promo.mp4" type="video/mp4">
+              <div class="phone__frame" style="display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,var(--color-primary),var(--color-accent));border-radius:12px;color:#fff;font-weight:700;font-size:1rem;">Your AI Short</div>
+            </video>
           </div>
         </div>
       </div>
@@ -195,7 +198,7 @@
             </div>
             <div>
               <h4 class="feature-card__title">AI image and clip generation</h4>
-              <p class="feature-card__desc">Midjourney, Runway, and style-matched visuals.</p>
+              <p class="feature-card__desc">AI images and clips matched to your reference style.</p>
             </div>
           </article>
           <article class="feature-card" data-reveal>
@@ -259,7 +262,7 @@
     <section class="section" aria-labelledby="sample-title">
       <div class="container">
         <div class="section__title" id="sample-title">Sample work</div>
-        <p class="section__subtitle">Real examples coming soon. Replace these placeholders with your own videos or images.</p>
+        <p class="section__subtitle">Real examples coming soon.</p>
         <div class="sample-grid">
           <article class="sample-card" data-reveal>
             <span class="sample-card__badge">Coming soon</span>
@@ -372,7 +375,7 @@
     <section class="cta-band" data-reveal>
       <div class="container">
         <h2 class="cta-band__title">Ready to make daily posting effortless?</h2>
-        <a href="#" class="btn btn--primary btn--block cta-band__btn" data-form>Start the intake form</a>
+        <a href="https://forms.gle/W2bm8ZdQxSzKfSTJ7" class="btn btn--primary btn--block cta-band__btn" data-form>Start the intake form</a>
       </div>
     </section>
 
@@ -395,13 +398,10 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#pricing">Pricing</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="/terms.html">Terms &amp; Refund Policy</a></li>
           </ul>
         </nav>
-        <ul class="footer__contact">
-          <li data-contact="email"><a href="mailto:">Email</a></li>
-          <li data-contact="whatsapp"><a href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
-          <li data-contact="instagram"><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li data-contact="tiktok"><a href="https://tiktok.com/@" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        <ul class="footer__contact" id="footer-contacts">
         </ul>
       </div>
       <div class="footer__bottom">

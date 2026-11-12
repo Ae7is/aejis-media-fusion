@@ -58,9 +58,11 @@ const CONFIG = {
 
   // Contact — leave empty to hide the item in the footer
   contact: {
-    email: '',
-    whatsapp: '',
+    email: 'aejismediafusion@gmail.com',
+    whatsapp: 'https://wa.me/message/3DECFQ4JYH3IE1',
+    tiktok: 'https://tiktok.com/@aejismediafusion',
+    youtube: 'https://www.youtube.com/@Aejismediafusion',
     instagram: '',
-    tiktok: ''
+    facebook: ''
   }
 };

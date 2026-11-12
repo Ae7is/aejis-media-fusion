@@ -12,6 +12,8 @@
   --color-surface-2: #18224A;
   --color-primary: #4F46E5;
   --color-accent: #22D3EE;
+  --accent-warm: #F5B544;
+  --accent-warm-glow: rgba(245, 181, 68, 0.25);
   --color-text: #F5F7FF;
   --color-muted: #A8B0D0;
   --color-border: rgba(255, 255, 255, 0.08);
@@ -478,6 +480,16 @@ header.scrolled {
   margin-left: 2px;
 }
 
+.phone__video {
+  width: 78%;
+  aspect-ratio: 9 / 16;
+  border-radius: 12px;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06);
+}
+
 @media (min-width: 768px) {
   .hero__inner {
     grid-template-columns: 1fr 1fr;
@@ -572,8 +584,8 @@ header.scrolled {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
-  color: #fff;
+  background: var(--accent-warm);
+  color: #0B1020;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -628,8 +640,8 @@ header.scrolled {
   flex-shrink: 0;
   width: 40px;
   height: 40px;
-  background: rgba(79, 70, 229, 0.1);
-  border: 1px solid rgba(79, 70, 229, 0.2);
+  background: var(--accent-warm-glow);
+  border: 1px solid var(--accent-warm);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -782,8 +794,8 @@ header.scrolled {
   top: -12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--color-primary);
-  color: #fff;
+  background: var(--accent-warm);
+  color: #0B1020;
   font-size: 0.75rem;
   font-weight: 800;
   padding: 0.25rem 0.75rem;
@@ -1047,6 +1059,26 @@ footer {
   }
 }
 
+/* Header: show full nav on 900px+, hamburger below */
+@media (min-width: 900px) {
+  .nav__list {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: none !important;
+  }
+
+  header .header__inner {
+    height: 72px;
+  }
+}
+
 /* -------------------------------------------------
    Scroll reveal animation
    ------------------------------------------------- */
@@ -1059,4 +1091,12 @@ footer {
 [data-reveal].revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+.warm-underline {
+  background: linear-gradient(to right, var(--accent-warm), var(--accent-warm));
+  background-size: 100% 2px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  color: var(--color-text);
 }
